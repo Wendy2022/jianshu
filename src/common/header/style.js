@@ -3,6 +3,7 @@ import logoPic from "../../statics/logo.png";
 
 //做了一个组件，就是一个带样式的div标签
 export const HeaderWrapper = styled.div`
+  z-index:1;
   position: relative;
   height: 58px;
   border-bottom: 1px solid #f0f0f0;
@@ -19,6 +20,15 @@ export const Logo = styled.a.attrs({
   background: url(${logoPic});
   background-size: contain;
 `;
+export const NavLink = styled.a.attrs({
+  href:'/login'
+})`
+`;
+export const NavWrite = styled.a.attrs({
+  href:'/write'
+})`
+`;
+
 export const Nav = styled.div`
   width: 960px;
   height: 100%;
